@@ -1,8 +1,9 @@
-const count = document.getElementById("counter");
-let val = parseInt(count.innerHTML); // convert to number
-
 function handleClick() {
-	alert(val);
-	val = val + 1;
-	count.innerHTML = val;
+	const counterEl = document.getElementById("counter");
+	let currentVal = parseInt(counterEl.innerHTML);
+
+	alert(currentVal); // alert BEFORE increment
+
+	currentVal += 1;
+	counterEl.innerHTML = currentVal; // update paragraph
 }
