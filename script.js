@@ -4,5 +4,5 @@ let val = parseInt(count.innerHTML); // convert to number
 function handleClick() {
 	alert(val);
 	val = val + 1;
-	val.innerHTML = val;
+	count.innerHTML = val;
 }
